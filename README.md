@@ -4,6 +4,8 @@ Exercice de développement Symfony4Exercice de développement Symfony 4
 <!-- * [Informations générales](#informations-générales) -->
 * [Technologies](#technologies)
 * [Installation](#installation)
+* [Paramétrage de la base de données](#paramétrage-BDD)
+* [Création des tables](#Création-des-tables)
 * [Démarrage](#démarrage)
 * [Versions](#versions)
 * [Auteur](#auteur)
