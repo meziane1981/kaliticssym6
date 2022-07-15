@@ -6,6 +6,7 @@ Exercice de développement Symfony4Exercice de développement Symfony 4
 * [Installation](#installation)
 * [Paramétrage de la base de données](#paramétrage-BDD)
 * [Création des tables](#Création-des-tables)
+* [Mise en place des templates et des assets CSS et JS](#Mise-en-place-des-templates-et-des-assets-CSS-et-JS)
 * [Démarrage](#démarrage)
 * [Versions](#versions)
 * [Auteur](#auteur)
@@ -47,4 +48,13 @@ php bin/console make:migration
 3. exécute la migrations
 ```
 php bin/console doctrine:migrations:migrate
+```
+## Mise en place des templates et des assets CSS et JS
+1. crée un controller MainController
+```
+ symfony console make:controller MainController
+```
+2. installer la dépendance suivante
+```
+composer require doctrine/annotations
 ```
