@@ -17,9 +17,17 @@ class PointagesFormType extends AbstractType
     {
         $builder
             ->add('dateDePointage', DateType::class, [
+                'format' => 'dd/MM/yyyy',
+                'placeholder' => [
+                    'year' => 'Année', 'month' => 'Mois', 'day' => 'Jour',
+                ],
 
             ])
-            ->add('dureeDePointage')
+            ->add('dureeDePointage', TimeType::class, [
+                'placeholder' => [
+                    'hour' => 'Heures', 'minute' => 'Minutes',
+                ],
+            ])
             ->add('utilisateurId', EntityType::class, [
                 'label' => 'Utilisateurs',
                 'placeholder' => 'Choisir un utilisateur',

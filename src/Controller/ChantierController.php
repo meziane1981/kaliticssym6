@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Chantiers;
+use App\Form\ChantiersFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -11,8 +13,10 @@ class ChantierController extends AbstractController
     #[Route('/main/chantier', name: 'chantier')]
     public function index(): Response
     {
-        return $this->render('chantier/index.html.twig', [
-            'controller_name' => 'ChantierController',
+        $chantiers =new Chantiers();
+        $form = $this->createForm(ChantiersFormType::class, $chantiers);
+        return $this->renderForm('chantier/create.html.twig', [
+            'form' => $form,
         ]);
     }
 }

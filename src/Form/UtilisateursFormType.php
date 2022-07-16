@@ -15,6 +15,9 @@ class UtilisateursFormType extends AbstractType
             ->add('nom')
             ->add('prenom')
             ->add('matricule')
+            ->add('submit', SubmitType::class, [
+                'label' => 'Valider'
+            ])
         ;
     }
 
