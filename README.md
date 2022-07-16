@@ -1,4 +1,4 @@
-# Kalitics
+# Kaliticss
 Exercice de développement Symfony4Exercice de développement Symfony 4
 ## Table des matières
 <!-- * [Informations générales](#informations-générales) -->
