@@ -58,3 +58,12 @@ php bin/console doctrine:migrations:migrate
 ```
 composer require doctrine/annotations
 ```
+## Installation des Forms
+1.  installer la fonctionnalité de formulaire 
+```
+composer require symfony/form
+```
+2. Création des formulaires Chantiers, Pointages , Utilisateurs 
+```
+composer require symfony/form
+```
