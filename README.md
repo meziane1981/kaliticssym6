@@ -67,3 +67,7 @@ composer require symfony/form
 ```
 composer require symfony/form
 ```
+3. declarer dans le fichier twig.yaml que nous utilisons Bootstrap
+```
+form_themes :['bootstrap_5_layout.html.twig']
+```
